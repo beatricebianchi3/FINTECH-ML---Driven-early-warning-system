@@ -31,8 +31,8 @@ This approach is mainly driven by the several **gains** that could derive from i
 ## Evaluation Metrics
 To determine the best model for market anomaly detection, we focused on 3 key metrics:
 
-* **Recall**: Measures the ability to identify all actual crashes, highlighting the model's effectiveness in capturing all relevant anomalies;
-* **Precision**: Measures the truthfulness of the positive predictions, which is crucial to minimize false alarms;
+* **Recall**: Measures the ability to identify all actual crashes, highlighting its effectiveness in capturing all relevant anomalies;
+* **Precision**: Measures the truthfulness of positive predictions, crucial for minimizing false alarms;
 * **Accuracy**: Provides an overall measure of the model's performance by considering both true positives and true negatives.
 
 ## Ensemble Model Development
