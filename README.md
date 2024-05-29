@@ -12,7 +12,7 @@ You can find the complete implementation of the models mentioned in the respecti
 # Methodology
 
 ## Feature Engineering and Data Splitting
-The features were divided into four buckets based on prior knowledge of the indices (Bonds, Equities, Commodities, Indexes). This initial grouping allowed us to implement an ensemble model in order to mazimize the performances of our model. After this, the data was split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
+The features are divided into 4 buckets based on prior knowledge of the indices (Bonds, Equities, Commodities, Indexes) for which we have 2000-2021 weekly data downloaded from Bloomberg. This initial grouping allowed us to implement an ensemble model in order to mazimize the performances of our model. After this, the data was split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
 
 ## Repository Structure
 - LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
