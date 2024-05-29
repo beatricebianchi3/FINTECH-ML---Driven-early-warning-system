@@ -13,7 +13,9 @@ You can find the complete implementation of the models mentioned in the respecti
 
 ## Feature Engineering
 The available dataset consists of 22-year weekly data from Bloomberg of key equity indices, bond indices, short/medium/long term interest rates, exchange rates, commodities, leading indicators (Economic surprise, Baltic Dry Index) and VIX (option implied volatility).
-Given the advantage of having prior knowledge on the features, data has been divided into **4 buckets**: Bonds, Equities, Commodities and Indexes. Each of them are studied independently with the corresponding optimal methods being included in the final **ensemble model** used for the actual predictions.   
+
+Given the advantage of having prior knowledge on the features, data has been divided into **4 buckets**: Bonds, Equities, Commodities and Indexes. Each of them are studied independently with the corresponding optimal methods being included in the final **ensemble model** used for the actual predictions.  
+
 This approach is mainly driven by the several gains that could derive from it:
 * **Tailored analysis**: Since each bucket represents a distinct financial market segment with unique characteristics and behaviors, the model can leverage domain-specific insights that are more relevant to each type of asset;
 * **Complexity reduction**: By breaking the dataset into buckets, models can focus on a narrower scope of features, leading to more straightforward patterns and relationships;
