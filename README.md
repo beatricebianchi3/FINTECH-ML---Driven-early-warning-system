@@ -40,13 +40,13 @@ To enhance model metrics, we developed an ensemble model by combining the best-p
 
 The use of Logistic Regression as the final model also provides us with the ability to understand the influence of different feature groups on our target variable, offering deeper insights into the factors driving market anomalies.
 
-## Repository Structure
+# Repository Structure
 - LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
 - DecisionTree.ipynb: This notebook details the use of a Decision Tree classifier to identify market crashes.
 - SVM.ipynb: This notebook demonstrates the use of a Support Vector Machine (SVM) for classifying market crashes.
 - EnsembleModel.ipynb: This notebook consolidates the findings from the previous models, comparing their performance and selecting the best method for market anomaly detection.
 
-## How to Use
+# How to Use
 - Clone the repository to your local machine.
 - Navigate to the directory and open the Jupyter notebooks in your preferred environment.
 - Run the notebooks in the sequence provided to replicate the experiments and view the results.
