@@ -35,10 +35,10 @@ To determine the best model for market anomaly detection, we focused on 3 key me
 * **Precision**: Measures the truthfulness of positive predictions, crucial for minimizing false alarms;
 * **Accuracy**: Provides an overall measure of the model's performance by considering both true positives and true negatives.
 
-## Ensemble Model Development
-To enhance model metrics, we developed an ensemble model by combining the best-performing models for each of the four buckets. Each model was trained using the training set and fitted on the validation set. The results from these models served as covariates in a final Logistic Regression model, which was then tested on the test set to determine its effectiveness in detecting market anomalies.
+## Ensemble Model Design
+To enhance our evaluation metrics, we developed an ensemble model by combining the best-performing models from each of the four buckets. Each model was trained and validated on the corresponding training and validation sets. Subsequently, the outputs from these models are used as input features in a final **Logistic Regression** model, which is then tested on the test set to assess its effectiveness in detecting market anomalies.
 
-The use of Logistic Regression as the final model also provides us with the ability to understand the influence of different feature groups on our target variable, offering deeper insights into the factors driving market anomalies.
+Using Logistic Regression as the final model allows us to understand the influence of different feature groups on the target variable, providing deeper insights into the factors driving market anomalies.
 
 # Repository Structure
 - LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
