@@ -8,6 +8,7 @@ Indeed, one of the main concerns of the investors is the market tendency to cras
 * **Customer trust**: EWS can boost investors' confidence by safeguarding their financial assets and personal information.
 
 In this specific case, an EWS is built after a detailed analysis of the strengths and weaknesses of various machine learning classification methods, namely Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine.
+
 You can find the complete implementation of the models mentioned in the respective Jupyter notebooks of the project.
 
 # Methodology
