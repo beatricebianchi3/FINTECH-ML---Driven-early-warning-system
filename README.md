@@ -28,25 +28,23 @@ This approach is mainly driven by the several **gains** that could derive from i
 * **Complexity reduction**: By breaking the dataset into buckets, models can focus on a narrower scope of features, leading to more straightforward patterns and relationships;
 * **Robustness**: Ensemble methods aggregate the predictions from multiple models, leading to more robust and reliable outcomes, potentially reducing the impact of any single model’s weaknesses.
 
-## Repository Structure
-- LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
-- DecisionTree.ipynb: This notebook details the use of a Decision Tree classifier to identify market crashes.
-- SVM.ipynb: This notebook demonstrates the use of a Support Vector Machine (SVM) for classifying market crashes.
-- EnsembleModel.ipynb: This notebook consolidates the findings from the previous models, comparing their performance and selecting the best method for market anomaly detection.
-
 ## Evaluation Metrics
-To determine the best model for market anomaly detection, we focused on three key metrics:
+To determine the best model for market anomaly detection, we focused on 3 key metrics:
 
-- Precision: Measures the accuracy of the positive predictions, indicating the proportion of true crashes among the detected anomalies.
-- Recall: Measures the ability to identify all actual crashes, highlighting the model's effectiveness in capturing all relevant anomalies.
-- Accuracy: Provides an overall measure of the model's performance by considering both true positives and true negatives.
-
-These metrics were used to ensure that the selected model reduces the false alarms.
+* **Recall**: Measures the ability to identify all actual crashes, highlighting the model's effectiveness in capturing all relevant anomalies;
+* **Precision**: Measures the truthfulness of the positive predictions, which is crucial to minimize false alarms;
+* **Accuracy**: Provides an overall measure of the model's performance by considering both true positives and true negatives.
 
 ## Ensemble Model Development
 To enhance model metrics, we developed an ensemble model by combining the best-performing models for each of the four buckets. Each model was trained using the training set and fitted on the validation set. The results from these models served as covariates in a final Logistic Regression model, which was then tested on the test set to determine its effectiveness in detecting market anomalies.
 
 The use of Logistic Regression as the final model also provides us with the ability to understand the influence of different feature groups on our target variable, offering deeper insights into the factors driving market anomalies.
+
+## Repository Structure
+- LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
+- DecisionTree.ipynb: This notebook details the use of a Decision Tree classifier to identify market crashes.
+- SVM.ipynb: This notebook demonstrates the use of a Support Vector Machine (SVM) for classifying market crashes.
+- EnsembleModel.ipynb: This notebook consolidates the findings from the previous models, comparing their performance and selecting the best method for market anomaly detection.
 
 ## How to Use
 - Clone the repository to your local machine.
