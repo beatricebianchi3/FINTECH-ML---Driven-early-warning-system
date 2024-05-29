@@ -4,7 +4,7 @@ This repository contains the code for a fintech project aimed at identifying mar
 The goal of this project is to accurately identify market anomalies using machine learning techniques. We have experimented with six different classification methods: Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine (SVM). Each method has been thoroughly evaluated to understand its strengths and weaknesses in the context of market crash detection.
 
 ## Feature Engineering and Data Splitting
-The features were divided into four buckets based on prior knowledge of the indices (Bonds, Equities, Commodities, Indexes). This initial grouping allowed us to implement an ensemble model in order to mazimize the performances of our model. After this, the data was split into training, validation, and test sets to ensure robust model evaluation and selection.
+The features were divided into four buckets based on prior knowledge of the indices (Bonds, Equities, Commodities, Indexes). This initial grouping allowed us to implement an ensemble model in order to mazimize the performances of our model. After this, the data was split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
 
 ## Repository Structure
 - LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
