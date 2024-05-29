@@ -17,7 +17,7 @@ The dataset, sourced from Bloomberg, consists of 22-year (2000-2021) weekly data
 
 ## Data pre-processing
 Missing values in the dataset are removed in order to prevent negative impacts on the output quality.\
-Next, features are standardized using _StandardScaler()_ to ensure comparability.\ 
+Next, features are standardized using _StandardScaler()_ to ensure comparability.\
 Finally, data is split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
 
 ## Feature Engineering
