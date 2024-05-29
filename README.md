@@ -17,8 +17,8 @@ You can find the complete implementation of the models mentioned in the respecti
 The available dataset has been downloaded from Bloomberg and it consists of 22-year weekly data (2000-2021) of key equity indices, bond indices, short/medium/long term interest rates, exchange rates, commodities, leading indicators (Economic surprise, Baltic Dry Index) and VIX (option implied volatility).
 
 ## Data pre-processing
-Missing values found in the dataset has been removed in order to prevent negative impacts on the output quality.
-Next, the features are made comparable through _standardization_ via StandardScaler(). 
+Missing values found in the dataset has been removed in order to prevent negative impacts on the output quality.\
+Next, the features are made comparable through _standardization_ via StandardScaler().\ 
 Finally, data is split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
 
 ## Feature Engineering
