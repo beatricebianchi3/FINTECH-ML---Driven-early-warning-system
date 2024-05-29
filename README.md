@@ -13,18 +13,21 @@ You can find the complete implementation of the models mentioned in the respecti
 
 # Methodology
 
-## Feature Engineering
-The available dataset consists of 22-year weekly data from Bloomberg of key equity indices, bond indices, short/medium/long term interest rates, exchange rates, commodities, leading indicators (Economic surprise, Baltic Dry Index) and VIX (option implied volatility).
+## Data overview
+The available dataset has been downloaded from Bloomberg and it consists of 22-year weekly data (2000-2021) of key equity indices, bond indices, short/medium/long term interest rates, exchange rates, commodities, leading indicators (Economic surprise, Baltic Dry Index) and VIX (option implied volatility).
 
+## Data pre-processing
+Missing values found in the dataset has been removed in order to prevent negative impacts on the output quality.
+Next, the features are made comparable through _standardization_ via StandardScaler(). 
+Finally, data is split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
+
+## Feature Engineering
 Given the advantage of having _prior knowledge_ on the features, data has been divided into **4 buckets**: Bonds, Equities, Commodities and Indexes. Each of them are studied independently with the corresponding optimal methods being included in the final **ensemble model** used for the actual predictions.  
 
 This approach is mainly driven by the several **gains** that could derive from it:
 * **Tailored analysis**: Since each bucket represents a distinct financial market segment with unique characteristics and behaviors, the model can leverage domain-specific insights that are more relevant to each type of asset;
 * **Complexity reduction**: By breaking the dataset into buckets, models can focus on a narrower scope of features, leading to more straightforward patterns and relationships;
 * **Robustness**: Ensemble methods aggregate the predictions from multiple models, leading to more robust and reliable outcomes, potentially reducing the impact of any single model’s weaknesses.
-
-## Data splitting
-Data is split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
 
 ## Repository Structure
 - LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
