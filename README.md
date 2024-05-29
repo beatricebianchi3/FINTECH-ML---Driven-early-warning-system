@@ -6,13 +6,16 @@ Indeed, one of the main concerns of the investors is the market tendency to cras
 * **Enhance market and operational efficiency**: early detection of anomalies contributes to market efficiency by providing timely information that can lead to better allocation of resources and more rational and strategic decision-making;
 * **Customer trust**: EWS can boost investors' confidence by safeguarding their financial assets and personal information.
 
-In this specific case, an EWS is built after a detailed analysis of the strengths and weaknesses of several machine learning classification methods, namely Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine.
+In this specific case, an EWS is built after a detailed analysis of the strengths and weaknesses of various machine learning classification methods, namely Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine.
 You can find the complete implementation of the models mentioned in the respective Jupyter notebooks of the project.
 
 # Methodology
 
 ## Feature Engineering and Data Splitting
-The features are divided into 4 buckets based on prior knowledge of the indices (Bonds, Equities, Commodities, Indexes) for which we have 2000-2021 weekly data downloaded from Bloomberg. This initial grouping allowed us to implement an ensemble model in order to mazimize the performances of our model. After this, the data was split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
+The available dataset consists of 22-year weekly data from Bloomberg of key equity indices, bond indices, short/medium/long term interest rates, exchange rates, commodities, leading indicators (Economic surprise, Baltic Dry Index) and VIX (option implied volatility).
+Given the advantage of having prior knowledge on the features, data has been divided into 4 buckets: Bonds, Equities, Commodities and Indexes. This approach is mainly driven by the several insights that could be gain from it.
+
+This initial grouping allowed us to implement an ensemble model in order to mazimize the performances of our model. After this, the data was split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
 
 ## Repository Structure
 - LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
