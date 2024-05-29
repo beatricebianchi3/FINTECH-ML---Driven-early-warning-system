@@ -1,28 +1,27 @@
 # FINTECH: ML-Driven Early Warning System
-This repository contains the code for a fintech project aimed at developping an **Early Warning System** for market anomaly detection (e.g. market crashes).
+This repository contains the code for a fintech project aimed at developping an **Early Warning System** for market anomaly detection, such as market crashes.
 
-Indeed, one of the main concerns of the investors is the market tendency to crash, since it can lead to significant financial losses. Hence, being able to detect such crashes early on entails a number of important benefits:
+Indeed, one of the main concerns for investors is the market's tendency to crash, since it can lead to significant financial losses. Hence, being able to detect such crashes early on provides several key benefits:
 * **Risk management**: EWS help investors and fund managers to take preemptive actions, such as diversifying portfolios, selling off risky assets, or hedging against potential losses;
-* **Fraud detection**: Market anomalies can sometimes be sign of fraudulent activities or market manipulation; so, detecting these early can prevent significant financial crimes and protect the integrity of the market; 
-* **Enhance market and operational efficiency**: Early detection of anomalies contributes to market efficiency by providing timely information that can lead to better allocation of resources and more rational and strategic decision-making;
+* **Fraud detection**: Market anomalies can indicate fraudulent activities or market manipulation. Early detection can prevent significant financial crimes and protect the integrity of the market; 
+* **Enhance market and operational efficiency**: Early detection of anomalies contributes to market efficiency by providing timely information, leading to better resource allocation and more strategic decision-making;
 * **Customer trust**: EWS can boost investors' confidence by safeguarding their financial assets and personal information.
 
-In this specific case, an EWS is built after a detailed analysis of the strengths and weaknesses of various machine learning classification methods, namely Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine.
-
-You can find the complete implementation of the models mentioned in the respective _Jupyter notebooks_ of the project.
+In this project, an EWS is built after a detailed analysis of the strengths and weaknesses of various machine learning classification methods, namely Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine.\
+The complete implementation of these models can be found in the project's respective _Jupyter notebooks_.
 
 # Methodology
 
 ## Data overview
-The available dataset has been downloaded from Bloomberg and it consists of 22-year weekly data (2000-2021) of key equity indices, bond indices, short/medium/long term interest rates, exchange rates, commodities, leading indicators (Economic surprise, Baltic Dry Index) and VIX (option implied volatility).
+The dataset, sourced from Bloomberg, consists of 22-year (2000-2021) weekly data on key equity indices, bond indices, short/medium/long term interest rates, exchange rates, commodities, leading indicators (Economic surprise, Baltic Dry Index) and VIX (option implied volatility).
 
 ## Data pre-processing
-Missing values found in the dataset has been removed in order to prevent negative impacts on the output quality.\
-Next, the features are made comparable through _standardization_ via StandardScaler().\ 
+Missing values in the dataset are removed in order to prevent negative impacts on the output quality.\
+Next, features are standardized using _StandardScaler()_ to ensure comparability.\ 
 Finally, data is split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
 
 ## Feature Engineering
-Given the advantage of having _prior knowledge_ on the features, data has been divided into **4 buckets**: Bonds, Equities, Commodities and Indexes. Each of them are studied independently with the corresponding optimal methods being included in the final **ensemble model** used for the actual predictions.  
+Given the advantage of having _prior knowledge_ on the features, data has been divided into **4 buckets**: Bonds, Equities, Commodities and Indexes. Each bucket is studied independently, and the optimal methods for each are included in the final **ensemble model** used for predictions.  
 
 This approach is mainly driven by the several **gains** that could derive from it:
 * **Tailored analysis**: Since each bucket represents a distinct financial market segment with unique characteristics and behaviors, the model can leverage domain-specific insights that are more relevant to each type of asset;
