@@ -1,7 +1,13 @@
 # FINTECH-ML-Driven-early-warning-system
-This repository contains the code for a fintech project aimed at identifying market anomalies, specifically market crashes, through various machine learning classification methods. The project is organized into several Jupyter notebooks, each exploring different approaches to anomaly detection.
+This repository contains the code for a fintech project aimed at developping an Early Warning System for market anomaly detection (e.g. market crashes)
+Indeed, one of the main concerns of the investors is the market tendency to crash, since it can lead to significant financial losses. Hence, being able to detect such crashes early on entails a number of important benefits:
+* Risk management:
+* Fraud detection:
+* Enhance market and operational efficieny:
+* Customer trust:
 
-The goal of this project is to accurately identify market anomalies using machine learning techniques. We have experimented with six different classification methods: Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine (SVM). Each method has been thoroughly evaluated to understand its strengths and weaknesses in the context of market crash detection.
+In this specific case, an EWS is built after a detailed analysis of the strengths and weaknesses of several machine learning classification methods, namely Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine.
+You can find the complete implementation of the models mentioned in the respective Jupyter notebooks of the project.
 
 ## Feature Engineering and Data Splitting
 The features were divided into four buckets based on prior knowledge of the indices (Bonds, Equities, Commodities, Indexes). This initial grouping allowed us to implement an ensemble model in order to mazimize the performances of our model. After this, the data was split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
