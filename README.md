@@ -9,21 +9,22 @@ Indeed, one of the main concerns of the investors is the market tendency to cras
 
 In this specific case, an EWS is built after a detailed analysis of the strengths and weaknesses of various machine learning classification methods, namely Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine.
 
-You can find the complete implementation of the models mentioned in the respective Jupyter notebooks of the project.
+You can find the complete implementation of the models mentioned in the respective _Jupyter notebooks_ of the project.
 
 # Methodology
 
 ## Feature Engineering
 The available dataset consists of 22-year weekly data from Bloomberg of key equity indices, bond indices, short/medium/long term interest rates, exchange rates, commodities, leading indicators (Economic surprise, Baltic Dry Index) and VIX (option implied volatility).
 
-Given the advantage of having prior knowledge on the features, data has been divided into **4 buckets**: Bonds, Equities, Commodities and Indexes. Each of them are studied independently with the corresponding optimal methods being included in the final **ensemble model** used for the actual predictions.  
+Given the advantage of having _prior knowledge_ on the features, data has been divided into **4 buckets**: Bonds, Equities, Commodities and Indexes. Each of them are studied independently with the corresponding optimal methods being included in the final **ensemble model** used for the actual predictions.  
 
-This approach is mainly driven by the several gains that could derive from it:
+This approach is mainly driven by the several **gains** that could derive from it:
 * **Tailored analysis**: Since each bucket represents a distinct financial market segment with unique characteristics and behaviors, the model can leverage domain-specific insights that are more relevant to each type of asset;
 * **Complexity reduction**: By breaking the dataset into buckets, models can focus on a narrower scope of features, leading to more straightforward patterns and relationships;
 * **Robustness**: Ensemble methods aggregate the predictions from multiple models, leading to more robust and reliable outcomes, potentially reducing the impact of any single model’s weaknesses.
 
-After this, the data was split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
+## Data splitting
+Data is split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
 
 ## Repository Structure
 - LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
