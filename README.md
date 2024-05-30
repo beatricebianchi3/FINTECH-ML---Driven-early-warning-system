@@ -73,7 +73,13 @@ This is primarily due to their ability to handle non-linear relationships, captu
 Their comparative advantages over models like Logistic Regression, Naive Bayes, Decision Tree, and SVM stem from their robustness, flexibility, and effectiveness in capturing intricate patterns in the data.
 
 ## Ensemble model results
-The Stacking model, using Logistic Regression as the meta-learner, achieved a recall of 0.92, precision of 0.88, and accuracy of 0.90. These results show a significant improvement over the individual models, particularly in terms of recall and precision.
+The table below illustrates the performance metrics of the Stacking model, using Logistic Regression as meta-learner:
+
+|                           | Recall (1) | Precision (1) | Accuracy |
+|---------------------------|-----------:|--------------:|---------:|
+| Test predictions          | 0.67       | 0.71          | 0.87     |
+
+These results show an improvement over the individual models in terms of recall, while maintining the accuracy level. 
 
 
 # Repository Structure
