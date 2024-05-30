@@ -68,7 +68,9 @@ After comparing the validation results of different models on the buckets, the f
 
 It should be stressed again that the recall and precision reported are referred to the **positive outcomes** (market crashes) only. Instead, the average value of both is around 0.80.
 
-As shown by the table, despite the numerous alternative models and the different nature of the buckets, the best performing ones are always RF and kNN. This is primarily due to their ability to handle non-linear relationships, capture local patterns, and reduce overfitting. Random Forest’s ensemble approach and feature importance metrics, along with kNN’s sensitivity to local data structures and outliers, make them particularly suited for the complexities of financial market data. Their comparative advantages over models like Logistic Regression, Naive Bayes, Decision Tree, and SVM stem from their robustness, flexibility, and effectiveness in capturing intricate patterns in the data.
+As shown by the table, despite the numerous alternative models and the different nature of the buckets, the best performing ones are always _Random Forest_ and _kNN_.\
+This is primarily due to their ability to handle non-linear relationships, capture local patterns, and reduce overfitting. Random Forest’s ensemble approach and feature importance metrics, along with kNN’s sensitivity to local data structures and outliers, make them particularly suited for the complexities of financial market data.\
+Their comparative advantages over models like Logistic Regression, Naive Bayes, Decision Tree, and SVM stem from their robustness, flexibility, and effectiveness in capturing intricate patterns in the data.
 
 # Ensemble model results
 The Stacking model, using Logistic Regression as the meta-learner, achieved a recall of 0.92, precision of 0.88, and accuracy of 0.90. These results show a significant improvement over the individual models, particularly in terms of recall and precision.
