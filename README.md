@@ -49,6 +49,11 @@ Specifically, **Logistic Regression** is chosen as the meta-learner for several 
 The effectiveness of the Logistic Regression model is assessed using the test set, determining its capability in detecting market anomalies.
 
 # Main Results and Discussion
+The primary objective of this project was to develop an effective Early Warning System (EWS) for market anomaly detection using machine learning techniques.\
+Therefore, model selection was mainly driven by the performance metrics such as positive outcomes' **recall**, which assesses the capability of the model to capture the actual market crashes, along with **precision**, which ensures a limited number of false alarms.
+
+
+
 
 
 # Repository Structure
