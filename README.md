@@ -40,7 +40,11 @@ To enhance our evaluation metrics, we employ a Stacking method. Stacking is one 
 More specifically, the **meta-learner** takes the outputs of the best-performing models from each of the four buckets as input and learns how to best combine their strengths in order to optimize the final prediction performance.
 
 The meta-learner chosen for this project is a **Logistic Regression** model, which is tested on the test set to assess its effectiveness in detecting market anomalies.\
-Using Logistic Regression as the final model allows us to understand the influence of different feature groups on the target variable, providing deeper insights into the factors driving market anomalies.
+There are several reasons underlying the choice of Logistic Regression as the final model:
+* **Probability Scores**: Probability outputs are particularly useful in early warning systems, since they can be interpreted as the likelihood of a market crash, allowing for a more nuanced decision-making process rather than a binary output;
+* **Interpretability**: Thanks to its simplicity, Logistic Regression provides clear insights into how each feature contributes to the prediction, which is crucial for understanding and trusting the model's output, especially in financial contexts where decisions need to be explainable to stakeholders;
+* **Computational Efficiency**: Logistic regression is computationally efficient, making it feasible to train and update regularly with new data, which is important in dynamic financial markets.
+* **Scalability**: It can handle large datasets efficiently, ensuring scalability as the volume of financial data grows over time.
 
 # Repository Structure
 - LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
