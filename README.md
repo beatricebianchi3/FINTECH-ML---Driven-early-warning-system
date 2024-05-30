@@ -41,9 +41,9 @@ To enhance our evaluation metrics, we employ a Stacking method, a popular ensemb
 In this project, the meta-learner takes the outputs of the best-performing models from each of the four buckets as input and learns how to best combine their strengths to optimize the final prediction performance.
 
 Specifically, **Logistic Regression** is chosen as the meta-learner for several reasons:
-* **Probability Scores**: Probability outputs are particularly useful in early warning systems, since they can be interpreted as the likelihood of a market crash, allowing for a more nuanced decision-making process rather than a binary output;
-* **Interpretability**: Thanks to its simplicity, Logistic Regression provides clear insights into how each feature contributes to the prediction, which is crucial for understanding and trusting the model's output, especially in financial contexts where decisions need to be explainable to stakeholders;
-* **Computational Efficiency**: Logistic regression is computationally efficient, making it feasible to train and update regularly with new data, which is important in dynamic financial markets.
+* **Probability Scores**: Probability outputs are particularly useful in EWS, since they can be interpreted as the likelihood of a market crash, allowing for a more nuanced decision-making process rather than a binary output;
+* **Interpretability**: Logistic Regression's simplicity allows for clear insights into how each feature contributes to the prediction, which is crucial in financial contexts, where decisions need to be explainable to stakeholders;
+* **Computational Efficiency**: Logistic regression is computationally efficient, making it feasible to train and update regularly with new data, which is important in dynamic financial markets;
 * **Scalability**: It can handle large datasets efficiently, ensuring scalability as the volume of financial data grows over time.
 
 The effectiveness of the Logistic Regression model is assessed using the test set, determining its capability in detecting market anomalies.
