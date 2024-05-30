@@ -112,7 +112,7 @@ The interpretability of our ensemble model, highlighted by the weights assigned 
 
 While our approach exhibits strengths such as robustness, interpretability, and scalability, it is not without limitations. Overfitting and reliance on historical data pose challenges that must be addressed. Regarding this, we propose exploring techniques such as oversampling and regularization to mitigate these limitations and further enhance model performance. 
 
-Future research could explore more advanced ensemble techniques, incorporate real-time data for continuous monitoring, and validate the model with different financial indicators and datasets. By continuously refining our methods and adapting to evolving market conditions, we can continue to improve the effectiveness of our Early Warning System and better equip stakeholders to navigate the complexities of financial markets.
+Future research could explore more advanced ensemble techniques, incorporate _real-time data_ for continuous monitoring, and validate the model with different financial indicators and datasets. By continuously refining our methods and adapting to evolving market conditions, we can continue to improve the effectiveness of our Early Warning System and better equip stakeholders to navigate the complexities of financial markets.
 
 # Repository Structure
 - _LogisticRegression.ipynb_: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
