@@ -46,6 +46,9 @@ There are several reasons underlying the choice of Logistic Regression as the fi
 * **Computational Efficiency**: Logistic regression is computationally efficient, making it feasible to train and update regularly with new data, which is important in dynamic financial markets.
 * **Scalability**: It can handle large datasets efficiently, ensuring scalability as the volume of financial data grows over time.
 
+# Main Results and Discussion
+
+
 # Repository Structure
 - LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
 - DecisionTree.ipynb: This notebook details the use of a Decision Tree classifier to identify market crashes.
