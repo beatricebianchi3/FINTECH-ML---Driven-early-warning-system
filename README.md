@@ -18,10 +18,10 @@ The dataset, sourced from Bloomberg, consists of 22-year (2000-2021) weekly data
 ## Data pre-processing
 Missing values in the dataset are removed in order to prevent negative impacts on the output quality.\
 Next, features are standardized using _StandardScaler()_ to ensure comparability.\
-Finally, data is split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
+Finally, data are split into training (60%), validation (20%), and test (20%) sets to ensure robust model evaluation and selection.
 
 ## Feature Engineering
-Given the advantage of having _prior knowledge_ on the features, data has been divided into **4 buckets**: Bonds, Equities, Commodities and Indexes. Each bucket is studied independently, and the optimal methods for each are included in the final **ensemble model** used for predictions.  
+Given the advantage of having _prior knowledge_ on the features, data have been divided into **4 buckets**: Bonds, Equities, Commodities and Indexes. Each bucket is studied independently, and the optimal methods for each are included in the final **ensemble model** used for predictions.  
 
 This approach is mainly driven by the several **gains** that could derive from it:
 * **Tailored analysis**: Since each bucket represents a distinct financial market segment with unique characteristics and behaviors, the model can leverage domain-specific insights that are more relevant to each type of asset;
