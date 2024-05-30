@@ -10,6 +10,17 @@ Indeed, one of the main concerns for investors is the market's tendency to crash
 In this project, an EWS is built after a detailed analysis of the strengths and weaknesses of various machine learning classification methods, namely _Logistic Regression_, _Naive Bayes_, _Decision Tree_, _Random Forest_, _kNN_ and _Support Vector Machine_.\
 The complete implementation of these models can be found in the project's respective _Jupyter notebooks_.
 
+### Repository Index
+
+1. [Introduction](#introduction)
+2. [Methodology](#methodology)
+3. [Evaluation Metrics](#evaluation-metrics)
+4. [Stacking](#stacking)
+5. [Main Results and Discussion](#main-results-and-discussion)
+6. [Conclusion](#conclusion)
+7. [Repository Structure](#repository-structure)
+8. [How to Use](#how-to-use)
+
 # Methodology
 
 ## Data overview
