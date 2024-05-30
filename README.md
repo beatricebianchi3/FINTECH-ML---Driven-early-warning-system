@@ -84,6 +84,18 @@ These results show an **improvement** over the individual models in terms of rec
 All in all, considering both positive and negative variations in the evaluation metrics, the ensemble method still performs better than the single models applied to the entire dataset.
 
 ## Strengths and limitations
+Strengths of our approach include the **robustness** and **interpretability** of the ensemble model, as well as its **scalability** for large datasets.
+
+|                | Weights         |
+|----------------|-----------------|
+| Bond           | 1.244           | 
+| Equity         | -0.389          | 
+| Commodities    | 0.093           | 
+| Indexes        | 1.423           | 
+
+For instance, looking at the weights assigned by the Logistic Regression to the different buckets, we understand better the importance of each asset group in predicting market anomalies. Bonds and Indexes appear to be the most influential in our case.
+
+Limitations include the potential for **overfitting** and the **reliance on historical data**, which may not fully capture future market conditions.
 
 ## Further work
 
