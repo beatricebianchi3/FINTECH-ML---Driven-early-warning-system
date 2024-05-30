@@ -98,8 +98,14 @@ For instance, looking at the weights assigned by the Logistic Regression to the 
 Limitations include the potential for **overfitting** and the **reliance on historical data**, which may not fully capture future market conditions.
 
 ## Further work
+In order to deal with issues like risk of overfitting and trade-off between recall and precision, we can exploit machine learning techniques such as:
+* **Oversampling**: By increasing the number of instances of the minority class in the training sets, we allow our weak learners to better capture the specific features of market crashes in the various asset buckets. This can lead to improvement in model performance (e.g. positive outcomes' recall rises to 0.73);
+* **Regularization**: By applying regularization to Logistic Regression, we can effectively control overfitting and improve the robustness of the model.
+
+Future research could explore more advanced ensemble techniques, incorporate real-time data for continuous monitoring, and validate the model with different financial indicators and datasets.
 
 # Conclusion
+
 
 # Repository Structure
 - _LogisticRegression.ipynb_: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
