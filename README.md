@@ -36,15 +36,18 @@ To determine the best model for market anomaly detection, we focused on 3 key me
 * **Accuracy**: Provides an overall measure of the model's performance by considering both true positives and true negatives.
 
 ## Stacking
-To enhance our evaluation metrics, we employ a Stacking method. Stacking is one of the popular ensemble modeling techniques in machine learning in which various weak learners are ensembled in a parallel manner in such a way that by combining them with meta-learners, we can predict better predictions for the future.\
-More specifically, the **meta-learner** takes the outputs of the best-performing models from each of the four buckets as input and learns how to best combine their strengths in order to optimize the final prediction performance.
+To enhance our evaluation metrics, we employ a Stacking method, a popular ensemble technique in machine learning. Stacking involves combining multiple weak learners in a parallel manner, and then using a **meta-learner** to integrate their outputs, resulting in improved predictive results.
 
-The meta-learner chosen for this project is a **Logistic Regression** model, which is tested on the test set to assess its effectiveness in detecting market anomalies.\
+Specifically, in this project, the meta-learner takes the outputs of the best-performing models from each of the four buckets as input and learns how to best combine their strengths to optimize the final prediction performance.
+
+**Logistic Regression** is chosen as the meta-learner for several reasons:
 There are several reasons underlying the choice of Logistic Regression as the final model:
 * **Probability Scores**: Probability outputs are particularly useful in early warning systems, since they can be interpreted as the likelihood of a market crash, allowing for a more nuanced decision-making process rather than a binary output;
 * **Interpretability**: Thanks to its simplicity, Logistic Regression provides clear insights into how each feature contributes to the prediction, which is crucial for understanding and trusting the model's output, especially in financial contexts where decisions need to be explainable to stakeholders;
 * **Computational Efficiency**: Logistic regression is computationally efficient, making it feasible to train and update regularly with new data, which is important in dynamic financial markets.
 * **Scalability**: It can handle large datasets efficiently, ensuring scalability as the volume of financial data grows over time.
+
+The effectiveness of the Logistic Regression model is assessed using the test set, determining its capability in detecting market anomalies.
 
 # Main Results and Discussion
 
