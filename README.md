@@ -56,6 +56,8 @@ The effectiveness of the Logistic Regression model is assessed using the test se
 The primary objective of this project was to develop an effective Early Warning System (EWS) for market anomaly detection using machine learning techniques.\
 Therefore, model selection was mainly driven by the performance metrics such as positive outcomes' **recall**, which assesses the capability of the model to capture the actual market crashes, along with **precision**, which ensures a limited number of false alarms.
 
+After comparing the validation results of different models on the buckets, the following combination has been adopted:
+
 |                | Model           | Recall (1) | Precision (1) | Accuracy |
 |----------------|-----------------|-----------:|--------------:|---------:|
 | Bond           | Random Forest   | 0.66       | 0.91          | 0.91     |
