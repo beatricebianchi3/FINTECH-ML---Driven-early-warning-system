@@ -39,7 +39,7 @@ To determine the best model for market anomaly detection, we focused on 3 key me
 To enhance our evaluation metrics, we employ a Stacking method, a popular ensemble technique in machine learning. Stacking involves combining multiple weak learners in a parallel manner, and then using a **meta-learner** to integrate their outputs, resulting in improved predictive results.
 
 <div align="center">
-  <img src="https://github.com/beatricebianchi3/FINTECH-ML---Driven-early-warning-system/assets/115880372/46cfbd9b-6324-4207-af6b-902a16bfae86" alt="39725Stacking" width="800" height="400">
+  <img src="https://github.com/beatricebianchi3/FINTECH-ML---Driven-early-warning-system/assets/115880372/46cfbd9b-6324-4207-af6b-902a16bfae86" alt="39725Stacking" width="600" height="300">
 </div>
 
 In this project, the meta-learner takes the outputs of the best-performing models from each of the four buckets as input and learns how to best combine their strengths to optimize the final prediction performance.
