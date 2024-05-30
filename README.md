@@ -77,10 +77,17 @@ The table below illustrates the performance metrics of the Stacking model, using
 
 |                           | Recall (1) | Precision (1) | Accuracy |
 |---------------------------|-----------:|--------------:|---------:|
-| Test predictions          | 0.67       | 0.71          | 0.87     |
+| Ensemble test predictions | 0.67       | 0.71          | 0.87     |
 
 These results show an **improvement** over the individual models in terms of recall, while maintining the accuracy level. On the other hand, the decrease in precision suggests that our model is becoming less conservative in its predictions, leading to more false alarms, albeit at moderate levels.
 
+All in all, considering both positive and negative variations in the evaluation metrics, the ensemble method still performs better than the single models applied to the entire dataset.
+
+## Strengths and limitations
+
+## Further work
+
+# Conclusion
 
 # Repository Structure
 - _LogisticRegression.ipynb_: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
