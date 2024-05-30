@@ -35,9 +35,11 @@ To determine the best model for market anomaly detection, we focused on 3 key me
 * **Precision**: Measures the truthfulness of positive predictions, crucial for minimizing false alarms;
 * **Accuracy**: Provides an overall measure of the model's performance by considering both true positives and true negatives.
 
-## Ensemble Model Design
-To enhance our evaluation metrics, we developed an ensemble model by combining the best-performing models from each of the four buckets. Each model was trained and validated on the corresponding training and validation sets. Subsequently, the outputs from these models are used as input features in a final **Logistic Regression** model, which is then tested on the test set to assess its effectiveness in detecting market anomalies.
+## Stacking
+To enhance our evaluation metrics, we employ a Stacking method. Stacking is one of the popular ensemble modeling techniques in machine learning in which various weak learners are ensembled in a parallel manner in such a way that by combining them with meta-learners, we can predict better predictions for the future.\
+More specifically, the **meta-learner** takes the outputs of the best-performing models from each of the four buckets as input and learns how to best combine their strengths in order to optimize the final prediction performance.
 
+The meta-learner chosen for this project is a **Logistic Regression** model, which is tested on the test set to assess its effectiveness in detecting market anomalies.\
 Using Logistic Regression as the final model allows us to understand the influence of different feature groups on the target variable, providing deeper insights into the factors driving market anomalies.
 
 # Repository Structure
