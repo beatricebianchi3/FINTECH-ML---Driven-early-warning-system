@@ -103,7 +103,7 @@ Strengths of our approach include the **robustness** and **interpretability** of
 | Commodities    | 0.093           | 
 | Indexes        | 1.423           | 
 
-For instance, looking at the weights assigned by the Logistic Regression to the different buckets, we understand better the importance of each asset group in predicting market anomalies. Bonds and Indexes appear to be the most influential in our case.
+For instance, looking at the weights assigned by the Logistic Regression to the different buckets, we can understand better the importance of each asset group in predicting market anomalies. Bonds and Indexes appear to be the most influential in our case.
 
 Limitations include the potential for **overfitting** and the **reliance on historical data**, which may not fully capture future market conditions.
 
