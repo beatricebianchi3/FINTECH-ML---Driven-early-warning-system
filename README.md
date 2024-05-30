@@ -125,7 +125,7 @@ While our approach exhibits strengths such as robustness, interpretability, and 
 
 Future research could explore more advanced ensemble techniques, incorporate _real-time data_ for continuous monitoring, and validate the model with different financial indicators and datasets. By continuously refining our methods and adapting to evolving market conditions, we can continue to improve the effectiveness of our Early Warning System and better equip stakeholders to navigate the complexities of financial markets.
 
-# Repository Structure
+# Repository Files
 - _Naivebayes.ipynb_: This notebook contains the code referred to the Naive Bayes method for market crashes detection.
 - _DecisionTree\_RandomFores.ipynb_: This notebook details the use of a Decision Tree classifier to identify market crashes.
 - _LogisticRegression.ipynb_: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
