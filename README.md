@@ -18,7 +18,7 @@ The complete implementation of these models can be found in the project's respec
 4. [Stacking](#stacking)
 5. [Main Results and Discussion](#main-results-and-discussion)
 6. [Conclusion](#conclusion)
-7. [Repository Structure](#repository-structure)
+7. [Repository Files](#repository-files)
 8. [How to Use](#how-to-use)
 
 # Methodology
