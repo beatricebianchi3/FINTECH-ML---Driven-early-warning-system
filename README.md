@@ -117,7 +117,7 @@ In conclusion, this project aimed to develop an effective Early Warning System (
 
 Our approach focused on maximizing performance metrics, particularly positive outcomes' recall and precision, crucial for capturing actual market crashes while minimizing false alarms. By comparing various models on different asset buckets, we identified Random Forest and kNN as consistently superior performers due to their ability to handle non-linear relationships and capture intricate patterns in financial market data.
 
-The implementation of an ensemble model further improved our predictive capabilities, leveraging the strengths of individual models while mitigating their weaknesses. Despite a slight decrease in precision, the ensemble method demonstrated a notable improvement in recall, maintaining a high level of accuracy.
+The implementation of an ensemble model further improved our predictive capabilities, leveraging the strengths of individual models while mitigating their weaknesses. Despite a slight decrease in precision, the ensemble method demonstrated a clear improvement in recall, maintaining a high level of accuracy.
 
 The interpretability of our ensemble model, highlighted by the weights assigned to different asset groups by the Logistic Regression meta-learner, provides valuable insights into the factors driving market anomalies. Bonds and Indexes emerged as the most influential asset groups, emphasizing their importance in anomaly prediction.
 
