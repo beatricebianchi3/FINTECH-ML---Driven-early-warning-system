@@ -50,10 +50,10 @@ There are several reasons underlying the choice of Logistic Regression as the fi
 
 
 # Repository Structure
-- LogisticRegression.ipynb: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
-- DecisionTree.ipynb: This notebook details the use of a Decision Tree classifier to identify market crashes.
-- SVM.ipynb: This notebook demonstrates the use of a Support Vector Machine (SVM) for classifying market crashes.
-- EnsembleModel.ipynb: This notebook consolidates the findings from the previous models, comparing their performance and selecting the best method for market anomaly detection.
+- _LogisticRegression.ipynb_: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
+- _DecisionTree.ipynb_: This notebook details the use of a Decision Tree classifier to identify market crashes.
+- _SVM.ipynb_: This notebook demonstrates the use of a Support Vector Machine (SVM) for classifying market crashes.
+- _EnsembleModel.ipynb_: This notebook consolidates the findings from the previous models, comparing their performance and selecting the best method for market anomaly detection.
 
 # How to Use
 - Clone the repository to your local machine.
