@@ -79,7 +79,7 @@ The table below illustrates the performance metrics of the Stacking model, using
 |---------------------------|-----------:|--------------:|---------:|
 | Test predictions          | 0.67       | 0.71          | 0.87     |
 
-These results show an improvement over the individual models in terms of recall, while maintining the accuracy level. 
+These results show an **improvement** over the individual models in terms of recall, while maintining the accuracy level. On the other hand, the decrease in precision suggests that our model is becoming less conservative in its predictions, leading to more false alarms, albeit at moderate levels.
 
 
 # Repository Structure
