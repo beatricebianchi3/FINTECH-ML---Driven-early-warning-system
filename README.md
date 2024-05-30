@@ -1,5 +1,5 @@
 # FINTECH: ML-Driven Early Warning System
-This repository contains the code for a fintech project aimed at developping an **Early Warning System** for market anomaly detection, such as market crashes.
+This repository contains the code for a fintech project aimed at developing an **Early Warning System** for market anomaly detection, such as market crashes.
 
 Indeed, one of the main concerns for investors is the market's tendency to crash, since it can lead to significant financial losses. Hence, being able to detect such crashes early on provides several key benefits:
 * **Risk management**: EWS help investors and fund managers to take preemptive actions, such as diversifying portfolios, selling off risky assets, or hedging against potential losses;
