@@ -7,7 +7,7 @@ Indeed, one of the main concerns for investors is the market's tendency to crash
 * **Enhance market and operational efficiency**: Early detection of anomalies contributes to market efficiency by providing timely information, leading to better resource allocation and more strategic decision-making;
 * **Customer trust**: EWS can boost investors' confidence by safeguarding their financial assets and personal information.
 
-In this project, an EWS is built after a detailed analysis of the strengths and weaknesses of various machine learning classification methods, namely Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine.\
+In this project, an EWS is built after a detailed analysis of the strengths and weaknesses of various machine learning classification methods, namely Logistic Regression, Naive Bayes, Decision Tree, Random Forest, kNN and Support Vector Machine.\
 The complete implementation of these models can be found in the project's respective _Jupyter notebooks_.
 
 # Methodology
@@ -54,7 +54,7 @@ The effectiveness of the Logistic Regression model is assessed using the test se
 
 # Main Results and Discussion
 The primary objective of this project was to develop an effective Early Warning System (EWS) for market anomaly detection using machine learning techniques.\
-Therefore, model selection was mainly driven by the performance metrics such as positive outcomes' **recall**, which assesses the capability of the model to capture the actual market crashes, along with **precision**, which ensures a limited number of false alarms.
+Therefore, model selection was mainly driven by the maximization of performance metrics such as positive outcomes' **recall**, which assesses the capability of the model to capture the actual market crashes, along with **precision**, which ensures a limited number of false alarms.
 
 After comparing the validation results of different models on the buckets, the following combination has been adopted:
 
@@ -65,6 +65,9 @@ After comparing the validation results of different models on the buckets, the f
 | Commodities    | kNN             | 0.64       | 0.81          | 0.89     |
 | Indexes        | Random Forest   | 0.64       | 0.94          | 0.91     |
 
+It should be stressed again that the recall and precision reported are referred to the **positive outcomes** (market crashes) only. Instead, the average value of both is around 0.80.
+
+Next, 
 
 
 # Repository Structure
