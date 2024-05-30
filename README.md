@@ -110,7 +110,7 @@ The implementation of an ensemble model further improved our predictive capabili
 
 The interpretability of our ensemble model, highlighted by the weights assigned to different asset groups by the Logistic Regression meta-learner, provides valuable insights into the factors driving market anomalies. Bonds and Indexes emerged as the most influential asset groups, emphasizing their importance in anomaly prediction.
 
-While our approach exhibits strengths such as robustness, interpretability, and scalability, it is not without limitations. Overfitting and reliance on historical data pose challenges that must be addressed. Moving forward, we propose exploring techniques such as oversampling and regularization to mitigate these limitations and further enhance model performance. 
+While our approach exhibits strengths such as robustness, interpretability, and scalability, it is not without limitations. Overfitting and reliance on historical data pose challenges that must be addressed. Regarding this, we propose exploring techniques such as oversampling and regularization to mitigate these limitations and further enhance model performance. 
 
 Future research could explore more advanced ensemble techniques, incorporate real-time data for continuous monitoring, and validate the model with different financial indicators and datasets. By continuously refining our methods and adapting to evolving market conditions, we can continue to improve the effectiveness of our Early Warning System and better equip stakeholders to navigate the complexities of financial markets.
 
