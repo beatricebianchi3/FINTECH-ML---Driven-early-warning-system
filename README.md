@@ -7,7 +7,7 @@ Indeed, one of the main concerns for investors is the market's tendency to crash
 * **Enhance market and operational efficiency**: Early detection of anomalies contributes to market efficiency by providing timely information, leading to better resource allocation and more strategic decision-making;
 * **Customer trust**: EWS can boost investors' confidence by safeguarding their financial assets and personal information.
 
-In this project, an EWS is built after a detailed analysis of the strengths and weaknesses of various machine learning classification methods, namely Logistic Regression, Naive Bayes, Decision Tree, Random Forest, kNN and Support Vector Machine.\
+In this project, an EWS is built after a detailed analysis of the strengths and weaknesses of various machine learning classification methods, namely _Logistic Regression_, _Naive Bayes_, _Decision Tree_, _Random Forest_, _kNN_ and _Support Vector Machine_.\
 The complete implementation of these models can be found in the project's respective _Jupyter notebooks_.
 
 # Methodology
@@ -56,6 +56,7 @@ The effectiveness of the Logistic Regression model is assessed using the test se
 The primary objective of this project was to develop an effective Early Warning System (EWS) for market anomaly detection using machine learning techniques.\
 Therefore, model selection was mainly driven by the maximization of performance metrics such as positive outcomes' **recall**, which assesses the capability of the model to capture the actual market crashes, along with **precision**, which ensures a limited number of false alarms.
 
+## Bucket models
 After comparing the validation results of different models on the buckets, the following combination has been adopted:
 
 |                | Model           | Recall (1) | Precision (1) | Accuracy |
@@ -67,7 +68,10 @@ After comparing the validation results of different models on the buckets, the f
 
 It should be stressed again that the recall and precision reported are referred to the **positive outcomes** (market crashes) only. Instead, the average value of both is around 0.80.
 
-Next, 
+As shown by the table, despite the numerous alternative models and the different nature of the buckets, the best performing ones are always RF and kNN. This is primarily due to their ability to handle non-linear relationships, capture local patterns, and reduce overfitting. Random Forest’s ensemble approach and feature importance metrics, along with kNN’s sensitivity to local data structures and outliers, make them particularly suited for the complexities of financial market data. Their comparative advantages over models like Logistic Regression, Naive Bayes, Decision Tree, and SVM stem from their robustness, flexibility, and effectiveness in capturing intricate patterns in the data.
+
+# Ensemble model results
+The Stacking model, using Logistic Regression as the meta-learner, achieved a recall of 0.92, precision of 0.88, and accuracy of 0.90. These results show a significant improvement over the individual models, particularly in terms of recall and precision.
 
 
 # Repository Structure
