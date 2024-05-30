@@ -53,10 +53,9 @@ Specifically, **Logistic Regression** is chosen as the meta-learner for several 
 The effectiveness of the Logistic Regression model is assessed using the test set, determining its capability in detecting market anomalies.
 
 # Main Results and Discussion
-The primary objective of this project was to develop an effective Early Warning System (EWS) for market anomaly detection using machine learning techniques.\
-Therefore, model selection was mainly driven by the maximization of performance metrics such as positive outcomes' **recall**, which assesses the capability of the model to capture the actual market crashes, along with **precision**, which ensures a limited number of false alarms.
-
 ## Bucket models
+Model selection was mainly driven by the maximization of performance metrics such as positive outcomes' **recall**, which assesses the capability of the model to capture the actual market crashes, along with **precision**, which ensures a limited number of false alarms.
+
 After comparing the validation results of different models on the buckets, the following combination has been adopted:
 
 |                | Model           | Recall (1) | Precision (1) | Accuracy |
@@ -102,10 +101,20 @@ In order to deal with issues like risk of overfitting and trade-off between reca
 * **Oversampling**: By increasing the number of instances of the minority class in the training sets, we allow our weak learners to better capture the specific features of market crashes in the various asset buckets. This can lead to improvement in model performance (e.g. positive outcomes' recall rises to 0.73);
 * **Regularization**: By applying regularization to Logistic Regression, we can effectively control overfitting and improve the robustness of the model.
 
-Future research could explore more advanced ensemble techniques, incorporate real-time data for continuous monitoring, and validate the model with different financial indicators and datasets.
-
 # Conclusion
+In conclusion, this project aimed to develop an effective Early Warning System (EWS) for market anomaly detection using machine learning techniques. Through meticulous model selection and evaluation, we have made relevant progress towards achieving this goal.
 
+Our approach focused on maximizing performance metrics, particularly positive outcomes' recall and precision, crucial for capturing actual market crashes while minimizing false alarms. By comparing various models on different asset buckets, we identified Random Forest and kNN as consistently superior performers due to their ability to handle non-linear relationships and capture intricate patterns in financial market data.
+
+The implementation of an ensemble model further improved our predictive capabilities, leveraging the strengths of individual models while mitigating their weaknesses. Despite a slight decrease in precision, the ensemble method demonstrated a notable improvement in recall, maintaining a high level of accuracy.
+
+The interpretability of our ensemble model, highlighted by the weights assigned to different asset groups by the Logistic Regression meta-learner, provides valuable insights into the factors driving market anomalies. Bonds and Indexes emerged as the most influential asset groups, emphasizing their importance in anomaly prediction.
+
+While our approach exhibits strengths such as robustness, interpretability, and scalability, it is not without limitations. Overfitting and reliance on historical data pose challenges that must be addressed in future research.
+
+Moving forward, we propose exploring techniques such as oversampling and regularization to mitigate these limitations and further enhance model performance. 
+
+Future research could explore more advanced ensemble techniques, incorporate real-time data for continuous monitoring, and validate the model with different financial indicators and datasets. By continuously refining our methods and adapting to evolving market conditions, we can continue to improve the effectiveness of our Early Warning System and better equip stakeholders to navigate the complexities of financial markets.
 
 # Repository Structure
 - _LogisticRegression.ipynb_: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
