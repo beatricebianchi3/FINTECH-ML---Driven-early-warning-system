@@ -127,6 +127,7 @@ Future research could explore more advanced ensemble techniques, incorporate _re
 
 # Repository Files
 - _CrashBusters.ipynb_: This notebook contains the final implementation of our EWS product CrashBusters.
+- _CrashBustersApp.ipynb_: This is the notebook of our CrashBusters Application.
 - _DecisionTree\_RandomForest.ipynb_: This notebook details the use of a Decision Tree classifier to identify market crashes.
 - _Logistic Regression.ipynb_: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
 - _NaiveBayes.ipynb_: This notebook contains the code referred to the Naive Bayes method for market crashes detection.
