@@ -126,7 +126,7 @@ While our approach exhibits strengths such as robustness, interpretability, and 
 Future research could explore more advanced ensemble techniques, incorporate _real-time data_ for continuous monitoring, and validate the model with different financial indicators and datasets. By continuously refining our methods and adapting to evolving market conditions, we can continue to improve the effectiveness of our Early Warning System and better equip stakeholders to navigate the complexities of financial markets.
 
 # Repository Files
-- _CrashBusters.ipynb_: This notebook contains the final implementation of oue EWS product CrashBusters.
+- _CrashBusters.ipynb_: This notebook contains the final implementation of our EWS product CrashBusters.
 - _DecisionTree\_RandomForest.ipynb_: This notebook details the use of a Decision Tree classifier to identify market crashes.
 - _Logistic Regression.ipynb_: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
 - _NaiveBayes.ipynb_: This notebook contains the code referred to the Naive Bayes method for market crashes detection.
@@ -137,4 +137,4 @@ Future research could explore more advanced ensemble techniques, incorporate _re
 - Clone the repository to your local machine.
 - Navigate to the directory and open the Jupyter notebooks in your preferred environment.
 - Run the notebooks in the sequence provided to replicate the experiments and view the results.
-- The final model selection notebook (EnsembleModel.ipynb) will guide you through the process of selecting the most effective model based on our experiments.
+- The final model selection notebook (_CrashBusters.ipynb) will guide you through the process of selecting the most effective model based on our experiments.
