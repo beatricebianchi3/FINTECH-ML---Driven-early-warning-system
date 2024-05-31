@@ -131,7 +131,7 @@ Future research could explore more advanced ensemble techniques, incorporate _re
 - _Logistic Regression.ipynb_: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
 - _kNN.ipynb_:  This notebook contains the analysis of kNN classifier as market anomaly detection model.
 - _SVM.ipynb_: This notebook demonstrates the use of a Support Vector Machine (SVM) for classifying market crashes.
-- _EnsembleModel.ipynb_: This notebook consolidates the findings from the previous models, comparing their performance and selecting the best method for market anomaly detection.
+- _CrashBusters.ipynb_: This notebook contains the final implementation of oue EWS product CrashBusters.
 
 # How to Use
 - Clone the repository to your local machine.
