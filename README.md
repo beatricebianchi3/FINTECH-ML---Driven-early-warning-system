@@ -128,7 +128,7 @@ Future research could explore more advanced ensemble techniques, incorporate _re
 # Repository Files
 - _Naivebayes.ipynb_: This notebook contains the code referred to the Naive Bayes method for market crashes detection.
 - _DecisionTree\_RandomFores.ipynb_: This notebook details the use of a Decision Tree classifier to identify market crashes.
-- _LogisticRegression.ipynb_: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
+- _Logistic Regression.ipynb_: This notebook contains the implementation and evaluation of a Logistic Regression model for market anomaly detection.
 - _kNN.ipynb_:  This notebook contains the analysis of kNN classifier as market anomaly detection model.
 - _SVM.ipynb_: This notebook demonstrates the use of a Support Vector Machine (SVM) for classifying market crashes.
 - _EnsembleModel.ipynb_: This notebook consolidates the findings from the previous models, comparing their performance and selecting the best method for market anomaly detection.
